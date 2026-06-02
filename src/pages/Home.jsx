@@ -148,7 +148,7 @@ export default function Home() {
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-blue-400/20 to-indigo-400/20 blur-xl scale-110 translate-y-4" />
 
               {/* Image frame (আপনার সেট করা Extra Large সাইজ) */}
-              <div className="relative w-80 h-96 lg:w-[32rem] lg:h-[560px] rounded-3xl overflow-hidden border-4 border-white shadow-2xl shadow-blue-100/80">
+              <div className="relative w-80 h-96 lg:w-[28rem] lg:h-[500px] rounded-3xl overflow-hidden border-4 border-white shadow-2xl shadow-blue-100/80">
                 <img
                   src={profileImage}
                   alt="Shovon — Full Stack Developer"
