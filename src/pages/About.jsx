@@ -43,7 +43,21 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>IAShovon | About</title>
+        <title>About Iftakhar Ahmmed Shovon | MERN Stack Developer</title>
+        <meta
+          name="description"
+          content="Learn more about Iftakhar Ahmmed Shovon, a MERN Stack Web Developer based in Bangladesh, specializing in clean engineering, performance optimization, and scalable web apps."
+        />
+        <link rel="canonical" href="https://iashovon.netlify.app/about" />
+        <meta
+          property="og:title"
+          content="About Iftakhar Ahmmed Shovon | MERN Stack Expert"
+        />
+        <meta
+          property="og:description"
+          content="Turning complex business requirements into fast, scalable, and visually compelling web applications."
+        />
+        <meta property="og:url" content="https://iashovon.netlify.app/about" />
       </Helmet>
       <div className="relative min-h-screen overflow-hidden bg-white pt-24 pb-20">
         {/* Glow Blur Filter Only */}
@@ -78,7 +92,7 @@ export default function About() {
                 </span>
               </div>
               <h1 className="text-3xl sm:text-4xl font-black text-slate-800 tracking-tight">
-                Turning Ideas Into{" "}
+                About Me — Turning Ideas Into{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">
                   Production-Grade
                 </span>{" "}

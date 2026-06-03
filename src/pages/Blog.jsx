@@ -14,7 +14,21 @@ export default function Blog() {
   return (
     <>
       <Helmet>
-        <title>IAShovon | Blog</title>
+        <title>Tech Insights & Web Development Articles | IAShovon Blog</title>
+        <meta
+          name="description"
+          content="Read expert articles, MERN stack tutorials, clean coding tips, and industry insights written by Full-Stack Developer Iftakhar Ahmmed Shovon."
+        />
+        <link rel="canonical" href="https://iashovon.netlify.app/blog" />
+        <meta
+          property="og:title"
+          content="Tech Insights & Web Development Articles | IAShovon Blog"
+        />
+        <meta
+          property="og:description"
+          content="Stay updated with web development techniques, React practices, and full-stack guides."
+        />
+        <meta property="og:url" content="https://iashovon.netlify.app/blog" />
       </Helmet>
       <div className="relative min-h-screen overflow-hidden bg-white pt-24 pb-20">
         <div

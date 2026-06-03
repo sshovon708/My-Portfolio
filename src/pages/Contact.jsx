@@ -35,7 +35,24 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>IAShovon | Contact</title>
+        <title>Hire a Freelance Web Developer | Contact Iftakhar Shovon</title>
+        <meta
+          name="description"
+          content="Looking for a reliable Full-Stack React & Node.js Developer in Bangladesh? Get in touch with Iftakhar Ahmmed Shovon for freelance projects or full-time roles."
+        />
+        <link rel="canonical" href="https://iashovon.netlify.app/contact" />
+        <meta
+          property="og:title"
+          content="Hire a Freelance Web Developer | Contact Iftakhar Shovon"
+        />
+        <meta
+          property="og:description"
+          content="Let's build something great. Get in touch for freelance collaborations or software roles."
+        />
+        <meta
+          property="og:url"
+          content="https://iashovon.netlify.app/contact"
+        />
       </Helmet>
       <div className="relative min-h-screen overflow-hidden bg-white pt-24 pb-20">
         {/* ── Soft Clean Glow Blobs Only (No Grid Background) ── */}

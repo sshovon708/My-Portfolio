@@ -15,7 +15,24 @@ export default function Projects() {
   return (
     <>
       <Helmet>
-        <title>IAShovon | Projects</title>
+        <title>Web Development Projects Portfolio | Iftakhar Shovon</title>
+        <meta
+          name="description"
+          content="Explore a collection of web applications, frontend designs, and full-stack solutions built with React, Tailwind CSS, Node.js, MongoDB, and PostgreSQL by Iftakhar Shovon."
+        />
+        <link rel="canonical" href="https://iashovon.netlify.app/projects" />
+        <meta
+          property="og:title"
+          content="Web Development Projects Portfolio | Iftakhar Shovon"
+        />
+        <meta
+          property="og:description"
+          content="Browse full-stack and frontend projects equipped with clean code architecture."
+        />
+        <meta
+          property="og:url"
+          content="https://iashovon.netlify.app/projects"
+        />
       </Helmet>
       <div className="relative min-h-screen overflow-hidden bg-white pt-24 pb-20">
         <div
