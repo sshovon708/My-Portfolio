@@ -35,7 +35,7 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Hire a Freelance Web Developer | Contact Iftakhar Shovon</title>
+        <title>Contact Me | IAShovon</title>
         <meta
           name="description"
           content="Looking for a reliable Full-Stack React & Node.js Developer in Bangladesh? Get in touch with Iftakhar Ahmmed Shovon for freelance projects or full-time roles."

@@ -43,7 +43,7 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>About Iftakhar Ahmmed Shovon | MERN Stack Developer</title>
+        <title>About Me | IAShovon</title>
         <meta
           name="description"
           content="Learn more about Iftakhar Ahmmed Shovon, a MERN Stack Web Developer based in Bangladesh, specializing in clean engineering, performance optimization, and scalable web apps."
@@ -77,7 +77,10 @@ export default function About() {
                 <div className="relative w-64 h-72 sm:w-72 sm:h-80 lg:w-80 lg:h-[360px] rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-xl">
                   <img
                     src={myAboutImage}
-                    alt="Iftakhar Ahmmed Shovon"
+                    alt="Iftakhar Ahmmed Shovon — Senior Full-Stack Developer Profile"
+                    width="320"
+                    height="360"
+                    fetchpriority="high"
                     className="w-full h-full object-cover object-center scale-105"
                   />
                 </div>

@@ -14,7 +14,7 @@ export default function Blog() {
   return (
     <>
       <Helmet>
-        <title>Tech Insights & Web Development Articles | IAShovon Blog</title>
+        <title>Tech Blog | IAShovon</title>
         <meta
           name="description"
           content="Read expert articles, MERN stack tutorials, clean coding tips, and industry insights written by Full-Stack Developer Iftakhar Ahmmed Shovon."

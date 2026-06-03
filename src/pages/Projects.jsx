@@ -15,7 +15,7 @@ export default function Projects() {
   return (
     <>
       <Helmet>
-        <title>Web Development Projects Portfolio | Iftakhar Shovon</title>
+        <title>My Projects | IAShovon</title>
         <meta
           name="description"
           content="Explore a collection of web applications, frontend designs, and full-stack solutions built with React, Tailwind CSS, Node.js, MongoDB, and PostgreSQL by Iftakhar Shovon."

@@ -18,9 +18,7 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>
-          Iftakhar Ahmmed Shovon | Full-Stack Web Developer Bangladesh
-        </title>
+        <title>IAShovon | Full-Stack Developer</title>
         <meta
           name="description"
           content="Iftakhar Ahmmed Shovon is a professional Full-Stack Web Developer specializing in React, Node.js, and MongoDB. Explore my portfolio for high-performance web applications."
@@ -172,7 +170,10 @@ export default function Home() {
                 <div className="relative w-80 h-96 lg:w-[28rem] lg:h-[500px] rounded-3xl overflow-hidden border-4 border-white shadow-2xl shadow-blue-100/80">
                   <img
                     src={profileImage}
-                    alt="Shovon — Full Stack Developer"
+                    alt="Iftakhar Ahmmed Shovon — Full-Stack React and Node.js Developer from Bangladesh"
+                    width="448"
+                    height="500"
+                    fetchpriority="high"
                     className="w-full h-full object-cover object-center scale-105 hover:scale-100 transition-transform duration-700"
                   />
                   <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-blue-900/20 to-transparent" />
