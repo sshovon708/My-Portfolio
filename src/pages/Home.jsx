@@ -428,9 +428,33 @@ export default function Home() {
         </section>
 
         <style>{`
-        @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-12px); } }
-      `}</style>
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-12px); } }
+  @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+    
+    .animate-\\[fadeUp_0\\.65s_ease_both\\],
+    .animate-\\[fadeUp_0\\.65s_0\\.18s_ease_both\\],
+    .animate-\\[float_5s_ease-in-out_infinite\\],
+    .animate-\\[float_5s_1\\.2s_ease-in-out_infinite\\],
+    .animate-\\[float_5s_2\\.5s_ease-in-out_infinite\\],
+    .animate-\\[spin_30s_linear_infinite\\],
+    .animate-\\[spin_20s_linear_infinite_reverse\\] {
+      animation: none !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  }
+`}</style>
       </div>
     </>
   );

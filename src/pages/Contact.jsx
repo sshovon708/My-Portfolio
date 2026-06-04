@@ -249,11 +249,30 @@ export default function Contact() {
         </div>
 
         <style>{`
-        @keyframes fadeUp {
-          from { opacity: 0; transform: translateY(20px); }
-          to   { opacity: 1; transform: translateY(0);    }
-        }
-      `}</style>
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+    
+    .animate-\\[fadeUp_0\\.65s_ease_both\\],
+    .animate-\\[fadeUp_0\\.65s_0\\.1s_ease_both\\],
+    .animate-\\[fadeUp_0\\.65s_0\\.2s_ease_both\\] {
+      animation: none !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  }
+`}</style>
       </div>
     </>
   );
