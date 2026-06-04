@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import myFooterImage from "../assets/images/my-image.jpg";
+import myFooterImage from "../assets/images/iftakhar-ahmmed-shovon-fullstack-developer-bangladesh.jpg";
 import {
   FaFacebookF,
   FaInstagram,

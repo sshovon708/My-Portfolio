@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import myAboutImage from "../assets/images/my-image.jpg";
+import myAboutImage from "../assets/images/iftakhar-ahmmed-shovon-fullstack-developer-bangladesh.jpg";
 import {
   FaGraduationCap,
   FaCode,

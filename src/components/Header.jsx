@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import logoImg from "../assets/images/logo.webp";
+import logoImg from "../assets/images/iftakhar-shovon-logo.webp";
 
 const navLinks = [
   { to: "/", label: "Home" },

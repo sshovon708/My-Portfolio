@@ -12,13 +12,42 @@ export default function Projects() {
       ? allProjects
       : allProjects.filter((p) => p.category === filter);
 
+  // ItemList Schema for Projects (without image field)
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Web Development Projects Portfolio | Iftakhar Shovon",
+    description:
+      "A collection of full-stack and frontend web development projects built with React, Node.js, MongoDB, and Tailwind CSS.",
+    numberOfItems: filtered.length,
+    itemListElement: filtered.map((project, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: project.title,
+      description: project.description,
+      url: `https://iashovon.netlify.app/projects/${project.id}`,
+      item: {
+        "@type": "CreativeWork",
+        name: project.title,
+        description: project.description,
+        keywords: project.tags?.join(", "),
+        url: project.liveLink,
+        codeRepository: project.githubLink,
+        about: {
+          "@type": "Thing",
+          name: project.category,
+        },
+      },
+    })),
+  };
+
   return (
     <>
       <Helmet>
         <title>My Projects | IAShovon</title>
         <meta
           name="description"
-          content="Explore a collection of web applications, frontend designs, and full-stack solutions built with React, Tailwind CSS, Node.js, MongoDB, and PostgreSQL by Iftakhar Shovon."
+          content="Explore 22+ web development projects by Iftakhar Shovon - React apps, Node.js APIs, MERN stack applications, and full-stack solutions with clean code architecture."
         />
         <link rel="canonical" href="https://iashovon.netlify.app/projects" />
         <meta
@@ -27,12 +56,27 @@ export default function Projects() {
         />
         <meta
           property="og:description"
-          content="Browse full-stack and frontend projects equipped with clean code architecture."
+          content="Browse 22+ full-stack and frontend projects equipped with clean code architecture. Real-world applications built with React, Node.js, MongoDB."
         />
         <meta
           property="og:url"
           content="https://iashovon.netlify.app/projects"
         />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Web Development Projects | Iftakhar Shovon"
+        />
+        <meta
+          name="twitter:description"
+          content="Explore my portfolio of 22+ React, Node.js, and full-stack projects."
+        />
+
+        {/* ItemList Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify(itemListSchema)}
+        </script>
       </Helmet>
       <div className="relative min-h-screen overflow-hidden bg-white pt-24 pb-20">
         <div
