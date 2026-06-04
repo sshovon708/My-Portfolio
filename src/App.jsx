@@ -7,7 +7,8 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
-import BlogPost from "./pages/BlogPost"; // নতুন পেজটি ইম্পোর্ট করা হলো
+import BlogPost from "./pages/BlogPost";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
               {/* ডাইনামিক ব্লগ রাউট - এটি আইডির ওপর ভিত্তি করে পেজ রেন্ডার করবে */}
               <Route path="/blog/:id" element={<BlogPost />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
         </div>
