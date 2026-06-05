@@ -9,6 +9,7 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import BlogPost from "./pages/BlogPost";
 import NotFound from "./pages/NotFound";
+import ThankYou from "./pages/Thankyou";
 
 function App() {
   return (
@@ -22,10 +23,10 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/blog" element={<Blog />} />
-              {/* ডাইনামিক ব্লগ রাউট - এটি আইডির ওপর ভিত্তি করে পেজ রেন্ডার করবে */}
               <Route path="/blog/:id" element={<BlogPost />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />
+              <Route path="/thank-you" element={<ThankYou/>}/>
             </Routes>
           </main>
         </div>

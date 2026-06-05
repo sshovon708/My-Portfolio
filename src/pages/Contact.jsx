@@ -6,9 +6,11 @@ import {
   FaMapMarkerAlt,
   FaPaperPlane,
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 export default function Contact() {
   const [status, setStatus] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -24,6 +26,9 @@ export default function Contact() {
       if (response.ok) {
         setStatus("SUCCESS");
         form.reset();
+         setTimeout(() => {
+           navigate("/thank-you");
+         }, 1500);
       } else {
         setStatus("ERROR");
       }
