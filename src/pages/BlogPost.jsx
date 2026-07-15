@@ -27,20 +27,48 @@ export default function BlogPost() {
   return (
     <>
       <Helmet>
-        {/* ডাইনামিক এসইও এবং এআই সার্চের জন্য অপ্টিমাইজড টাইটেল ও মেটা */}
-        <title>{`${post.title} | IAShovon Blog`}</title>
+        <title>{`${post.title} | IAShovon Web Development Blog`}</title>
         <meta name="description" content={post.excerpt} />
         <link
           rel="canonical"
           href={`https://iashovon.netlify.app/blog/${post.id}`}
         />
-        <meta property="og:title" content={`${post.title} | IAShovon`} />
+        <meta property="og:title" content={`${post.title} | Iftakhar Shovon`} />
         <meta property="og:description" content={post.excerpt} />
         <meta
           property="og:url"
           content={`https://iashovon.netlify.app/blog/${post.id}`}
         />
         <meta property="og:type" content="article" />
+        <meta property="article:published_time" content={post.date} />
+        <meta property="article:author" content="Iftakhar Ahmmed Shovon" />
+        <meta property="article:section" content={post.category} />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": post.title,
+            "description": post.excerpt,
+            "articleBody": post.content,
+            "url": `https://iashovon.netlify.app/blog/${post.id}`,
+            "datePublished": post.date,
+            "dateModified": post.date,
+            "author": {
+              "@type": "Person",
+              "name": "Iftakhar Ahmmed Shovon",
+              "url": "https://iashovon.netlify.app/"
+            },
+            "publisher": {
+              "@type": "Person",
+              "name": "Iftakhar Ahmmed Shovon"
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": `https://iashovon.netlify.app/blog/${post.id}`
+            },
+            "wordCount": post.content?.split(" ").length || 0
+          })}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-white text-slate-800 pt-24 pb-20">

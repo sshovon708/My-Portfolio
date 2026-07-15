@@ -16,6 +16,24 @@ const ROUTES = [
   "/blog/1",
   "/blog/2",
   "/blog/3",
+  "/blog/4",
+  "/blog/5",
+  "/blog/6",
+  "/blog/7",
+  "/blog/8",
+  "/blog/9",
+  "/blog/10",
+  "/blog/11",
+  "/blog/12",
+  "/blog/13",
+  "/blog/14",
+  "/blog/15",
+  "/blog/16",
+  "/blog/17",
+  "/blog/18",
+  "/blog/19",
+  "/blog/20",
+  "/blog/21",
 ];
 
 const PORT = 4173;
@@ -30,7 +48,7 @@ async function waitForServer(url, timeout = 10000, interval = 500) {
     try {
       const response = await fetch(url);
       if (response.ok) return true;
-    } catch (e) {
+    } catch {
       // server not ready yet
     }
     await new Promise((resolve) => setTimeout(resolve, interval));

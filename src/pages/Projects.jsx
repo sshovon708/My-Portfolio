@@ -12,7 +12,7 @@ export default function Projects() {
       ? allProjects
       : allProjects.filter((p) => p.category === filter);
 
-  // ItemList Schema for Projects (without image field)
+  // ItemList Schema for Projects — uses live links or portfolio anchor URLs matching the app's actual routing
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -25,7 +25,7 @@ export default function Projects() {
       position: index + 1,
       name: project.title,
       description: project.description,
-      url: `https://iashovon.netlify.app/projects/${project.id}`,
+      url: project.liveLink || `https://iashovon.netlify.app/projects#${project.id}`,
       item: {
         "@type": "CreativeWork",
         name: project.title,
@@ -83,8 +83,8 @@ export default function Projects() {
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 z-0"
         >
-          <div className="absolute top-20 -left-32 w-[500px] h-[500px] rounded-full bg-blue-500/5 blur-3xl" />
-          <div className="absolute bottom-10 -right-32 w-[600px] h-[600px] rounded-full bg-indigo-500/5 blur-3xl" />
+          <div className="absolute top-20 -left-32 w-125 h-125 rounded-full bg-blue-500/5 blur-3xl" />
+          <div className="absolute bottom-10 -right-32 w-150 h-150 rounded-full bg-indigo-500/5 blur-3xl" />
         </div>
 
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -98,7 +98,7 @@ export default function Projects() {
             </div>
             <h1 className="text-4xl sm:text-5xl font-black text-slate-800 tracking-tight mb-4">
               My{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-cyan-600">
                 Projects
               </span>
             </h1>

@@ -14,11 +14,13 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const [prevPathname, setPrevPathname] = useState(location.pathname);
 
   // Close mobile menu on route change
-  useEffect(() => {
+  if (location.pathname !== prevPathname) {
+    setPrevPathname(location.pathname);
     setMenuOpen(false);
-  }, [location]);
+  }
 
   // Add shadow on scroll
   useEffect(() => {
@@ -103,11 +105,11 @@ export default function Header() {
                     <span className="relative z-10">{label}</span>
 
                     {/* Hover Effect: Border bottom expanding from center */}
-                    <span className="absolute bottom-1 left-1/2 w-0 h-[2px] bg-blue-500 rounded-full transition-all duration-300 origin-center -translate-x-1/2 group-hover:w-3/5" />
+                    <span className="absolute bottom-1 left-1/2 w-0 h-0.5 bg-blue-500 rounded-full transition-all duration-300 origin-center -translate-x-1/2 group-hover:w-3/5" />
 
                     {/* Click Active Slide indicator */}
                     {isActive && (
-                      <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-3/5 h-[2px] rounded-full bg-blue-600 transition-all duration-300" />
+                      <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-3/5 h-0.5 rounded-full bg-blue-600 transition-all duration-300" />
                     )}
                   </>
                 )}

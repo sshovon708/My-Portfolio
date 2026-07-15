@@ -17,7 +17,7 @@ export default function NotFound() {
 
       <div className="min-h-screen flex items-center justify-center bg-white relative overflow-hidden px-6">
         {/* আপনার বাকি JSX কোড একই থাকবে */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-blue-500/5 blur-3xl pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-125 h-125 rounded-full bg-blue-500/5 blur-3xl pointer-events-none" />
 
         <div className="text-center max-w-md relative z-10 animate-[fadeUp_0.5s_ease_both]">
           <h1 className="text-9xl font-black text-slate-200 tracking-tighter font-mono mb-2">

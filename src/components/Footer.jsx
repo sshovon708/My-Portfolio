@@ -56,7 +56,7 @@ export default function Footer() {
   return (
     <footer className="bg-white text-slate-600 border-t border-slate-200/80">
       {/* Top gradient accent */}
-      <div className="h-px bg-gradient-to-r from-transparent via-blue-500/30 to-transparent" />
+      <div className="h-px bg-linear-to-r from-transparent via-blue-500/30 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-20 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-slate-200/70">
@@ -83,7 +83,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <p className="text-xs text-slate-500 leading-relaxed font-light max-w-[240px]">
+            <p className="text-xs text-slate-500 leading-relaxed font-light max-w-60">
               Full-Stack Web Developer crafting performant, scalable, and
               beautifully designed applications from scratch.
             </p>

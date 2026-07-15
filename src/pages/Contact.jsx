@@ -40,19 +40,19 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Contact Me | IAShovon</title>
+        <title>Hire a Full-Stack Web Developer in Bangladesh | Contact Iftakhar Shovon</title>
         <meta
           name="description"
-          content="Looking for a reliable Full-Stack React & Node.js Developer in Bangladesh? Get in touch with Iftakhar Ahmmed Shovon for freelance projects or full-time roles."
+          content="Looking for a reliable Full-Stack React & Node.js Developer in Bangladesh? Contact Iftakhar Ahmmed Shovon for freelance web development projects, collaborations, or full-time opportunities. Response within 24 hours."
         />
         <link rel="canonical" href="https://iashovon.netlify.app/contact" />
         <meta
           property="og:title"
-          content="Hire a Freelance Web Developer | Contact Iftakhar Shovon"
+          content="Hire a Freelance Web Developer in Bangladesh | Contact Iftakhar Shovon"
         />
         <meta
           property="og:description"
-          content="Let's build something great. Get in touch for freelance collaborations or software roles."
+          content="Need a skilled React, Node.js, or MERN stack developer? Get in touch for freelance projects, collaborations, or full-time roles. Based in Bangladesh, serving clients worldwide."
         />
         <meta
           property="og:url"
@@ -65,8 +65,8 @@ export default function Contact() {
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 z-0"
         >
-          <div className="absolute top-32 -left-24 w-[500px] h-[500px] rounded-full bg-blue-500/5 blur-3xl" />
-          <div className="absolute bottom-10 -right-24 w-[550px] h-[550px] rounded-full bg-indigo-500/5 blur-3xl" />
+          <div className="absolute top-32 -left-24 w-125 h-125 rounded-full bg-blue-500/5 blur-3xl" />
+          <div className="absolute bottom-10 -right-24 w-137.5 h-137.5 rounded-full bg-indigo-500/5 blur-3xl" />
         </div>
 
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -81,7 +81,7 @@ export default function Contact() {
             </div>
             <h1 className="text-4xl sm:text-5xl font-black text-slate-800 tracking-tight mb-4">
               Let's Build{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-cyan-600">
                 Something Great
               </span>
             </h1>

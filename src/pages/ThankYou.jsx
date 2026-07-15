@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { FaHome, FaEnvelope, FaTwitter } from "react-icons/fa";
+import { FaHome, FaEnvelope } from "react-icons/fa";
 
 export default function ThankYou() {
   return (
@@ -21,7 +21,7 @@ export default function ThankYou() {
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 z-0"
         >
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-emerald-500/5 blur-3xl" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-125 h-125 rounded-full bg-emerald-500/5 blur-3xl" />
         </div>
 
         <div className="relative z-10 w-full max-w-2xl mx-auto px-6 text-center">

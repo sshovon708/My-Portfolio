@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import profileImage from "../assets/images/iftakhar-ahmmed-shovon-fullstack-developer-bangladesh.jpg";
+import profileImage from "../../public/images/iftakhar-ahmmed-shovon-fullstack-developer-bangladesh.jpg";
 import {
   recentProjects,
   recentBlogPosts,
@@ -18,19 +18,19 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>IAShovon | Full-Stack Developer</title>
+        <title>Iftakhar Ahmmed Shovon | Full-Stack Web Developer in Bangladesh — React, Node.js, MongoDB</title>
         <meta
           name="description"
-          content="Iftakhar Ahmmed Shovon is a professional Full-Stack Web Developer specializing in React, Node.js, and MongoDB. Explore my portfolio for high-performance web applications."
+          content="Iftakhar Ahmmed Shovon is a professional Full-Stack Web Developer from Bangladesh specializing in React, Node.js, and MongoDB. Explore my portfolio of 20+ projects, read expert blog posts on MERN stack development, and hire a reliable freelance web developer."
         />
         <link rel="canonical" href="https://iashovon.netlify.app/" />
         <meta
           property="og:title"
-          content="Iftakhar Ahmmed Shovon | Full-Stack Web Developer Portfolio"
+          content="Iftakhar Ahmmed Shovon | Full-Stack Web Developer in Bangladesh — Portfolio"
         />
         <meta
           property="og:description"
-          content="React, Node.js & MongoDB specialist. Building scalable, high-performance web applications."
+          content="Full-Stack Web Developer from Bangladesh specializing in React, Node.js & MongoDB. Browse 20+ web development projects, read expert articles, and get in touch for freelance or full-time opportunities."
         />
         <meta property="og:url" content="https://iashovon.netlify.app/" />
       </Helmet>
@@ -40,8 +40,8 @@ export default function Home() {
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 z-0"
         >
-          <div className="absolute -top-40 -right-40 w-[700px] h-[700px] rounded-full bg-blue-500/5 blur-3xl" />
-          <div className="absolute top-[60%] -left-40 w-[500px] h-[500px] rounded-full bg-indigo-500/5 blur-3xl" />
+          <div className="absolute -top-40 -right-40 w-175 h-175 rounded-full bg-blue-500/5 blur-3xl" />
+          <div className="absolute top-[60%] -left-40 w-125 h-125 rounded-full bg-indigo-500/5 blur-3xl" />
         </div>
 
         {/* ── HERO SECTION ── */}
@@ -57,7 +57,7 @@ export default function Home() {
               <h1 className="text-4xl sm:text-5xl xl:text-[3.75rem] font-black leading-[1.08] tracking-tight">
                 <span className="text-slate-800">I Build</span>{" "}
                 <span className="relative inline-block">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-indigo-600">
+                  <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 via-cyan-500 to-indigo-600">
                     Full-Stack
                   </span>
                 </span>
@@ -151,23 +151,23 @@ export default function Home() {
             {/* RIGHT — Profile image */}
             <div className="relative flex items-center justify-center animate-[fadeUp_0.65s_0.18s_ease_both]">
               {/* Slow-spin dashed ring (ইমেজের চেয়ে বড় করা হয়েছে যেন বাইরে থেকে দেখা যায়) */}
-              <div className="absolute w-[380px] h-[380px] lg:w-[38rem] lg:h-[38rem] rounded-full border-2 border-dashed border-blue-200/60 animate-[spin_30s_linear_infinite]" />
+              <div className="absolute w-95 h-95 lg:w-152 lg:h-152 rounded-full border-2 border-dashed border-blue-200/60 animate-[spin_30s_linear_infinite]" />
 
               {/* Counter-rotating ring with orbiting dot (পারফেক্ট বৃত্তাকার বা Circle করার জন্য width ও height সমান করা হয়েছে) */}
-              <div className="absolute w-[340px] h-[340px] lg:w-[35rem] lg:h-[35rem] rounded-full border border-indigo-200/50 animate-[spin_20s_linear_infinite_reverse]">
+              <div className="absolute w-85 h-85 lg:w-140 lg:h-140 rounded-full border border-indigo-200/50 animate-[spin_20s_linear_infinite_reverse]">
                 <div className="absolute -top-1.5 left-1/2 -translate-x-1/2 w-3.5 h-3.5 rounded-full bg-blue-500 shadow-[0_0_10px_4px_rgba(37,99,235,0.35)]" />
               </div>
 
               {/* Glow backdrop (ইমেজের ঠিক পেছনে পারফেক্ট সাইজে ব্লাভ ছড়াবে) */}
-              <div className="absolute w-72 h-80 lg:w-[30rem] lg:h-[520px] rounded-full bg-gradient-to-br from-blue-100 to-indigo-100 blur-3xl opacity-70" />
+              <div className="absolute w-72 h-80 lg:w-120 lg:h-130 rounded-full bg-linear-to-br from-blue-100 to-indigo-100 blur-3xl opacity-70" />
 
               {/* Photo — floating */}
               <div className="relative z-10 animate-[float_5s_ease-in-out_infinite]">
                 {/* ইমেজ বড় হওয়ায় পেছনের শ্যাডো গ্লো-টা scale-110 করা হয়েছে */}
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-blue-400/20 to-indigo-400/20 blur-xl scale-110 translate-y-4" />
+                <div className="absolute inset-0 rounded-3xl bg-linear-to-br from-blue-400/20 to-indigo-400/20 blur-xl scale-110 translate-y-4" />
 
                 {/* Image frame (আপনার সেট করা Extra Large সাইজ) */}
-                <div className="relative w-80 h-96 lg:w-[28rem] lg:h-[500px] rounded-3xl overflow-hidden border-4 border-white shadow-2xl shadow-blue-100/80">
+                <div className="relative w-80 h-96 lg:w-md lg:h-125 rounded-3xl overflow-hidden border-4 border-white shadow-2xl shadow-blue-100/80">
                   <img
                     src={profileImage}
                     alt="Iftakhar Ahmmed Shovon — Full-Stack React and Node.js Developer from Bangladesh"
@@ -176,7 +176,7 @@ export default function Home() {
                     fetchpriority="high"
                     className="w-full h-full object-cover object-center scale-105 hover:scale-100 transition-transform duration-700"
                   />
-                  <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-blue-900/20 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-linear-to-t from-blue-900/20 to-transparent" />
                 </div>
 
                 {/* Corner star accent */}

@@ -7,21 +7,47 @@ export default function Blog() {
   return (
     <>
       <Helmet>
-        <title>Tech Blog | IAShovon</title>
+        <title>Web Development Blog | MERN Stack Tutorials & Insights by Iftakhar Shovon</title>
         <meta
           name="description"
-          content="Read expert articles, MERN stack tutorials, clean coding tips, and industry insights written by Full-Stack Developer Iftakhar Ahmmed Shovon."
+          content="Read expert web development articles, MERN stack tutorials, React best practices, Node.js tips, and clean coding insights by Full-Stack Developer Iftakhar Ahmmed Shovon from Bangladesh."
         />
         <link rel="canonical" href="https://iashovon.netlify.app/blog" />
         <meta
           property="og:title"
-          content="Tech Insights & Web Development Articles | IAShovon Blog"
+          content="Web Development Blog | MERN Stack Tutorials & Tech Insights"
         />
         <meta
           property="og:description"
-          content="Stay updated with web development techniques, React practices, and full-stack guides."
+          content="Expert articles on React, Node.js, MongoDB, TypeScript, and full-stack web development. Learn from a professional developer's experience."
         />
         <meta property="og:url" content="https://iashovon.netlify.app/blog" />
+        <meta property="og:type" content="blog" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            "name": "IAShovon Web Development Blog",
+            "description": "Expert articles, MERN stack tutorials, and clean coding insights by Full-Stack Developer Iftakhar Ahmmed Shovon.",
+            "url": "https://iashovon.netlify.app/blog",
+            "author": {
+              "@type": "Person",
+              "name": "Iftakhar Ahmmed Shovon",
+              "url": "https://iashovon.netlify.app/"
+            },
+            "blogPost": allBlogPosts.map((post) => ({
+              "@type": "BlogPosting",
+              "headline": post.title,
+              "description": post.excerpt,
+              "url": `https://iashovon.netlify.app/blog/${post.id}`,
+              "datePublished": post.date,
+              "author": {
+                "@type": "Person",
+                "name": "Iftakhar Ahmmed Shovon"
+              }
+            }))
+          })}
+        </script>
       </Helmet>
 
       <div className="relative min-h-screen overflow-hidden bg-white pt-24 pb-20">
@@ -30,8 +56,8 @@ export default function Blog() {
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 z-0"
         >
-          <div className="absolute top-24 -right-32 w-[550px] h-[550px] rounded-full bg-blue-500/5 blur-3xl" />
-          <div className="absolute bottom-16 -left-32 w-[500px] h-[500px] rounded-full bg-indigo-500/5 blur-3xl" />
+          <div className="absolute top-24 -right-32 w-137.5 h-137.5 rounded-full bg-blue-500/5 blur-3xl" />
+          <div className="absolute bottom-16 -left-32 w-125 h-125 rounded-full bg-indigo-500/5 blur-3xl" />
         </div>
 
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -46,7 +72,7 @@ export default function Blog() {
             </div>
             <h1 className="text-4xl sm:text-5xl font-black text-slate-800 tracking-tight mb-4">
               Tech{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-cyan-600">
                 Insights
               </span>{" "}
               &amp; Stories

@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
-import myAboutImage from "../assets/images/iftakhar-ahmmed-shovon-fullstack-developer-bangladesh.jpg";
+
+import myAboutImage from "/iftakhar-ahmmed-shovon-fullstack-developer-bangladesh.jpg";
 import {
   FaGraduationCap,
   FaCode,
@@ -43,21 +43,31 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>About Me | IAShovon</title>
+        <title>About Iftakhar Ahmmed Shovon | React & Node.js Developer from Bangladesh</title>
         <meta
           name="description"
-          content="Learn more about Iftakhar Ahmmed Shovon, a MERN Stack Web Developer based in Bangladesh, specializing in clean engineering, performance optimization, and scalable web apps."
+          content="Learn about Iftakhar Ahmmed Shovon, a professional MERN Stack Web Developer from Bangladesh with 3+ years of experience. Specializing in React, Node.js, MongoDB, and clean code architecture. Available for freelance web development projects and full-time roles."
         />
         <link rel="canonical" href="https://iashovon.netlify.app/about" />
         <meta
           property="og:title"
-          content="About Iftakhar Ahmmed Shovon | MERN Stack Expert"
+          content="About Iftakhar Ahmmed Shovon | MERN Stack Developer Bangladesh"
         />
         <meta
           property="og:description"
-          content="Turning complex business requirements into fast, scalable, and visually compelling web applications."
+          content="Full-Stack Web Developer from Bangladesh with expertise in React, Node.js, and MongoDB. I turn complex business requirements into fast, scalable, and visually compelling web applications."
         />
         <meta property="og:url" content="https://iashovon.netlify.app/about" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://iashovon.netlify.app/" },
+              { "@type": "ListItem", "position": 2, "name": "About", "item": "https://iashovon.netlify.app/about" }
+            ]
+          })}
+        </script>
       </Helmet>
       <div className="relative min-h-screen overflow-hidden bg-white pt-24 pb-20">
         {/* Glow Blur Filter Only */}
@@ -65,16 +75,16 @@ export default function About() {
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 z-0"
         >
-          <div className="absolute top-40 -right-24 w-[500px] h-[500px] rounded-full bg-blue-500/5 blur-3xl" />
-          <div className="absolute bottom-20 -left-24 w-[450px] h-[450px] rounded-full bg-indigo-500/5 blur-3xl" />
+          <div className="absolute top-40 -right-24 w-125 h-125 rounded-full bg-blue-500/5 blur-3xl" />
+          <div className="absolute bottom-20 -left-24 w-112.5 h-112.5 rounded-full bg-indigo-500/5 blur-3xl" />
         </div>
 
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-20">
           <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center mb-24">
             <div className="lg:col-span-5 flex justify-center animate-[fadeUp_0.65s_ease_both]">
               <div className="relative">
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-blue-500/5 to-indigo-500/5 blur-xl scale-105 translate-y-4" />
-                <div className="relative w-64 h-72 sm:w-72 sm:h-80 lg:w-80 lg:h-[360px] rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-xl">
+                <div className="absolute inset-0 rounded-3xl bg-linear-to-br from-blue-500/5 to-indigo-500/5 blur-xl scale-105 translate-y-4" />
+                <div className="relative w-64 h-72 sm:w-72 sm:h-80 lg:w-80 lg:h-90 rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-xl">
                   <img
                     src={myAboutImage}
                     alt="Iftakhar Ahmmed Shovon — Senior Full-Stack Developer Profile"
@@ -96,7 +106,7 @@ export default function About() {
               </div>
               <h1 className="text-3xl sm:text-4xl font-black text-slate-800 tracking-tight">
                 About Me — Turning Ideas Into{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">
+                <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-cyan-600">
                   Production-Grade
                 </span>{" "}
                 Software
