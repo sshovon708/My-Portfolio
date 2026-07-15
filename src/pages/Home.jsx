@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import profileImage from "../../public/images/iftakhar-ahmmed-shovon-fullstack-developer-bangladesh.jpg";
+import profileImage from "/iftakhar-ahmmed-shovon-fullstack-developer-bangladesh.jpg";
 import {
   recentProjects,
   recentBlogPosts,
