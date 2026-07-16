@@ -22,7 +22,21 @@ export default function Blog() {
           content="Expert articles on React, Node.js, MongoDB, TypeScript, and full-stack web development by Full-Stack Developer Iftakhar Ahmmed Shovon."
         />
         <meta property="og:url" content="https://iashovon.netlify.app/blog" />
-        <meta property="og:type" content="blog" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@sshovon708" />
+        <meta name="twitter:creator" content="@sshovon708" />
+        <meta
+          name="twitter:title"
+          content="Blog | IAShovon — Web Development Tutorials & Tech Insights"
+        />
+        <meta
+          name="twitter:description"
+          content="Expert articles on React, Node.js, MongoDB, TypeScript, and full-stack web development by Full-Stack Developer Iftakhar Ahmmed Shovon."
+        />
+        <meta name="twitter:image" content="https://iashovon.netlify.app/iftakhar-ahmmed-shovon-fullstack-developer-bangladesh.jpg" />
+        <meta name="twitter:image:alt" content="Iftakhar Ahmmed Shovon — Full-Stack Web Developer" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

@@ -33,6 +33,20 @@ export default function Home() {
           content="Iftakhar Ahmmed Shovon — Full-Stack Web Developer from Bangladesh. Browse 20+ web development projects, read expert articles, and get in touch for freelance opportunities."
         />
         <meta property="og:url" content="https://iashovon.netlify.app/" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@sshovon708" />
+        <meta name="twitter:creator" content="@sshovon708" />
+        <meta
+          name="twitter:title"
+          content="IAShovon | Full-Stack Web Developer — React, Node.js Portfolio"
+        />
+        <meta
+          name="twitter:description"
+          content="Iftakhar Ahmmed Shovon — Full-Stack Web Developer from Bangladesh. Browse 20+ web development projects, read expert articles, and get in touch for freelance opportunities."
+        />
+        <meta name="twitter:image" content="https://iashovon.netlify.app/iftakhar-ahmmed-shovon-fullstack-developer-bangladesh.jpg" />
+        <meta name="twitter:image:alt" content="Iftakhar Ahmmed Shovon — Full-Stack Web Developer" />
       </Helmet>
       <div className="relative min-h-screen overflow-hidden bg-white">
         {/* ── Soft Clean Glow Blobs Only (No Grid Lines) ── */}

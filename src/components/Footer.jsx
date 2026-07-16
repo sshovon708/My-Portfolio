@@ -35,8 +35,8 @@ const socialLinks = [
   },
   {
     icon: <FaLinkedinIn className="w-4 h-4" />,
-    href: "#",
-    label: "LinkedIn (coming soon)",
+    href: "https://www.linkedin.com/in/sshovon708",
+    label: "LinkedIn",
     color:
       "hover:bg-blue-700 hover:border-blue-600 hover:text-white hover:shadow-blue-600/40",
   },

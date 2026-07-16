@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <!-- Home -->
   <url>
     <loc>https://iashovon.netlify.app/</loc>
     <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iashovon.netlify.app/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://iashovon.netlify.app/" />
   </url>
   <!-- About -->
   <url>
@@ -35,151 +38,131 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <!-- Blog Post 1 -->
+  <!-- Blog Posts -->
   <url>
     <loc>https://iashovon.netlify.app/blog/1</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
-  <!-- Blog Post 2 -->
   <url>
     <loc>https://iashovon.netlify.app/blog/2</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
-  <!-- Blog Post 3 -->
   <url>
     <loc>https://iashovon.netlify.app/blog/3</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
-  <!-- Blog Post 4 -->
   <url>
     <loc>https://iashovon.netlify.app/blog/4</loc>
     <lastmod>2026-05-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-  <!-- Blog Post 5 -->
   <url>
     <loc>https://iashovon.netlify.app/blog/5</loc>
     <lastmod>2026-04-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-  <!-- Blog Post 6 -->
   <url>
     <loc>https://iashovon.netlify.app/blog/6</loc>
     <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-  <!-- Blog Post 7 -->
   <url>
     <loc>https://iashovon.netlify.app/blog/7</loc>
     <lastmod>2026-04-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-  <!-- Blog Post 8 -->
   <url>
     <loc>https://iashovon.netlify.app/blog/8</loc>
     <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-  <!-- Blog Post 9 -->
   <url>
     <loc>https://iashovon.netlify.app/blog/9</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-  <!-- Blog Post 10 -->
   <url>
     <loc>https://iashovon.netlify.app/blog/10</loc>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-  <!-- Blog Post 11 -->
   <url>
     <loc>https://iashovon.netlify.app/blog/11</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-  <!-- Blog Post 12 -->
   <url>
     <loc>https://iashovon.netlify.app/blog/12</loc>
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-  <!-- Blog Post 13 -->
   <url>
     <loc>https://iashovon.netlify.app/blog/13</loc>
     <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-  <!-- Blog Post 14 -->
   <url>
     <loc>https://iashovon.netlify.app/blog/14</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-  <!-- Blog Post 15 -->
   <url>
     <loc>https://iashovon.netlify.app/blog/15</loc>
     <lastmod>2026-02-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-  <!-- Blog Post 16 -->
   <url>
     <loc>https://iashovon.netlify.app/blog/16</loc>
     <lastmod>2026-02-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-  <!-- Blog Post 17 -->
   <url>
     <loc>https://iashovon.netlify.app/blog/17</loc>
     <lastmod>2026-02-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-  <!-- Blog Post 18 -->
   <url>
     <loc>https://iashovon.netlify.app/blog/18</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-  <!-- Blog Post 19 -->
   <url>
     <loc>https://iashovon.netlify.app/blog/19</loc>
     <lastmod>2026-01-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-  <!-- Blog Post 20 -->
   <url>
     <loc>https://iashovon.netlify.app/blog/20</loc>
     <lastmod>2026-01-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-  <!-- Blog Post 21 -->
   <url>
     <loc>https://iashovon.netlify.app/blog/21</loc>
     <lastmod>2026-01-04</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 </urlset>

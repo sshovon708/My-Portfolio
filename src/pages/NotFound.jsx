@@ -6,11 +6,10 @@ export default function NotFound() {
   return (
     <>
       <Helmet>
-        <html lang="bn" /> {/* ✅ 404 পেজের জন্য বাংলা lang */}
-        <title>404 - পাতা খুঁজে পাওয়া যায়নি | IAShovon</title>
+        <title>404 — Page Not Found | IAShovon</title>
         <meta
           name="description"
-          content="404 Error - আপনি যে পৃষ্ঠাটি খুঁজছেন তা বিদ্যমান নেই। দয়া করে সঠিক URL ব্যবহার করুন।"
+          content="Page not found. The page you're looking for doesn't exist or has been moved. Return to the homepage of Iftakhar Ahmmed Shovon's portfolio."
         />
         <meta name="robots" content="noindex, follow" />
       </Helmet>

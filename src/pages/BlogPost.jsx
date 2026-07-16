@@ -41,8 +41,18 @@ export default function BlogPost() {
         />
         <meta property="og:type" content="article" />
         <meta property="article:published_time" content={post.date} />
+        <meta property="article:modified_time" content={post.date} />
         <meta property="article:author" content="Iftakhar Ahmmed Shovon" />
         <meta property="article:section" content={post.category} />
+        <meta property="article:tag" content={post.category} />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@sshovon708" />
+        <meta name="twitter:creator" content="@sshovon708" />
+        <meta name="twitter:title" content={`${post.title} | IAShovon Blog`} />
+        <meta name="twitter:description" content={post.excerpt} />
+        <meta name="twitter:image" content="https://iashovon.netlify.app/iftakhar-ahmmed-shovon-fullstack-developer-bangladesh.jpg" />
+        <meta name="twitter:image:alt" content={post.title} />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

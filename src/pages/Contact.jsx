@@ -58,6 +58,39 @@ export default function Contact() {
           property="og:url"
           content="https://iashovon.netlify.app/contact"
         />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@sshovon708" />
+        <meta name="twitter:creator" content="@sshovon708" />
+        <meta
+          name="twitter:title"
+          content="Contact IAShovon — Full-Stack Web Developer in Bangladesh"
+        />
+        <meta
+          name="twitter:description"
+          content="Need a skilled React, Node.js, or MERN stack developer? Contact Iftakhar Ahmmed Shovon for freelance projects, collaborations, or full-time roles. Based in Bangladesh, serving worldwide."
+        />
+        <meta name="twitter:image" content="https://iashovon.netlify.app/iftakhar-ahmmed-shovon-fullstack-developer-bangladesh.jpg" />
+        <meta name="twitter:image:alt" content="Iftakhar Ahmmed Shovon — Full-Stack Web Developer" />
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": ["ContactPage", "WebPage"],
+            "@id": "https://iashovon.netlify.app/contact#webpage",
+            "url": "https://iashovon.netlify.app/contact",
+            "name": "Contact | IAShovon — Full-Stack Web Developer",
+            "description": "Contact Iftakhar Ahmmed Shovon for freelance web development projects, collaborations, or full-time opportunities.",
+            "isPartOf": { "@id": "https://iashovon.netlify.app/#website" },
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://iashovon.netlify.app/" },
+                { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://iashovon.netlify.app/contact" }
+              ]
+            }
+          })}
+        </script>
       </Helmet>
       <div className="relative min-h-screen overflow-hidden bg-white pt-24 pb-20">
         {/* ── Soft Clean Glow Blobs Only (No Grid Background) ── */}

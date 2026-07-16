@@ -58,6 +58,21 @@ export default function About() {
           content="Iftakhar Ahmmed Shovon — Full-Stack Web Developer from Bangladesh with expertise in React, Node.js, and MongoDB. Turning complex requirements into fast, scalable web applications."
         />
         <meta property="og:url" content="https://iashovon.netlify.app/about" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@sshovon708" />
+        <meta name="twitter:creator" content="@sshovon708" />
+        <meta
+          name="twitter:title"
+          content="About IAShovon — Full-Stack Web Developer from Bangladesh"
+        />
+        <meta
+          name="twitter:description"
+          content="Iftakhar Ahmmed Shovon — Full-Stack Web Developer from Bangladesh with expertise in React, Node.js, and MongoDB. Turning complex requirements into fast, scalable web applications."
+        />
+        <meta name="twitter:image" content="https://iashovon.netlify.app/iftakhar-ahmmed-shovon-fullstack-developer-bangladesh.jpg" />
+        <meta name="twitter:image:alt" content="Iftakhar Ahmmed Shovon — Full-Stack Web Developer" />
+
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

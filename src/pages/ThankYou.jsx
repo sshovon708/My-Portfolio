@@ -13,6 +13,18 @@ export default function ThankYou() {
         />
         <meta name="robots" content="noindex, nofollow" />
         <link rel="canonical" href="https://iashovon.netlify.app/thank-you" />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@sshovon708" />
+        <meta name="twitter:creator" content="@sshovon708" />
+        <meta
+          name="twitter:title"
+          content="Message Sent | Thank You — IAShovon"
+        />
+        <meta
+          name="twitter:description"
+          content="Thank you for reaching out to Iftakhar Ahmmed Shovon! Your message has been received and I'll get back to you within 24 hours."
+        />
       </Helmet>
 
       <div className="relative min-h-screen overflow-hidden bg-white pt-32 pb-20">
