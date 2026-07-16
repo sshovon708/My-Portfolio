@@ -6,10 +6,10 @@ export default function ThankYou() {
   return (
     <>
       <Helmet>
-        <title>Message Sent | Thank You - Iftakhar Shovon</title>
+        <title>Message Sent | Thank You — IAShovon</title>
         <meta
           name="description"
-          content="Thank you for reaching out! I've received your message and will get back to you within 24 hours."
+          content="Thank you for reaching out to Iftakhar Ahmmed Shovon! Your message has been received and I'll get back to you within 24 hours."
         />
         <meta name="robots" content="noindex, nofollow" />
         <link rel="canonical" href="https://iashovon.netlify.app/thank-you" />

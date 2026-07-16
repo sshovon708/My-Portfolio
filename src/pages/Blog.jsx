@@ -7,19 +7,19 @@ export default function Blog() {
   return (
     <>
       <Helmet>
-        <title>Web Development Blog | MERN Stack Tutorials & Insights by Iftakhar Shovon</title>
+        <title>Blog | IAShovon — Web Development Tutorials & Tech Insights</title>
         <meta
           name="description"
-          content="Read expert web development articles, MERN stack tutorials, React best practices, Node.js tips, and clean coding insights by Full-Stack Developer Iftakhar Ahmmed Shovon from Bangladesh."
+          content="Read expert web development articles, MERN stack tutorials, React best practices, and Node.js tips by Full-Stack Developer Iftakhar Ahmmed Shovon from Bangladesh."
         />
         <link rel="canonical" href="https://iashovon.netlify.app/blog" />
         <meta
           property="og:title"
-          content="Web Development Blog | MERN Stack Tutorials & Tech Insights"
+          content="Blog | IAShovon — Web Development Tutorials & Tech Insights"
         />
         <meta
           property="og:description"
-          content="Expert articles on React, Node.js, MongoDB, TypeScript, and full-stack web development. Learn from a professional developer's experience."
+          content="Expert articles on React, Node.js, MongoDB, TypeScript, and full-stack web development by Full-Stack Developer Iftakhar Ahmmed Shovon."
         />
         <meta property="og:url" content="https://iashovon.netlify.app/blog" />
         <meta property="og:type" content="blog" />

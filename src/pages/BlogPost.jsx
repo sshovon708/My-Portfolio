@@ -27,13 +27,13 @@ export default function BlogPost() {
   return (
     <>
       <Helmet>
-        <title>{`${post.title} | IAShovon Web Development Blog`}</title>
+        <title>{`${post.title} | IAShovon Blog`}</title>
         <meta name="description" content={post.excerpt} />
         <link
           rel="canonical"
           href={`https://iashovon.netlify.app/blog/${post.id}`}
         />
-        <meta property="og:title" content={`${post.title} | Iftakhar Shovon`} />
+        <meta property="og:title" content={`${post.title} | IAShovon Blog`} />
         <meta property="og:description" content={post.excerpt} />
         <meta
           property="og:url"

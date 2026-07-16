@@ -40,19 +40,19 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Hire a Full-Stack Web Developer in Bangladesh | Contact Iftakhar Shovon</title>
+        <title>Contact | IAShovon — Full-Stack Web Developer, Bangladesh</title>
         <meta
           name="description"
-          content="Looking for a reliable Full-Stack React & Node.js Developer in Bangladesh? Contact Iftakhar Ahmmed Shovon for freelance web development projects, collaborations, or full-time opportunities. Response within 24 hours."
+          content="Looking for a reliable Full-Stack React & Node.js Developer in Bangladesh? Contact Iftakhar Ahmmed Shovon for freelance projects, collaborations, or full-time opportunities. Response within 24 hours."
         />
         <link rel="canonical" href="https://iashovon.netlify.app/contact" />
         <meta
           property="og:title"
-          content="Hire a Freelance Web Developer in Bangladesh | Contact Iftakhar Shovon"
+          content="Contact IAShovon — Full-Stack Web Developer in Bangladesh"
         />
         <meta
           property="og:description"
-          content="Need a skilled React, Node.js, or MERN stack developer? Get in touch for freelance projects, collaborations, or full-time roles. Based in Bangladesh, serving clients worldwide."
+          content="Need a skilled React, Node.js, or MERN stack developer? Contact Iftakhar Ahmmed Shovon for freelance projects, collaborations, or full-time roles. Based in Bangladesh, serving worldwide."
         />
         <meta
           property="og:url"

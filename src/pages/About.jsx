@@ -43,19 +43,19 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>About Iftakhar Ahmmed Shovon | React & Node.js Developer from Bangladesh</title>
+        <title>About | IAShovon — Full-Stack Web Developer from Bangladesh</title>
         <meta
           name="description"
-          content="Learn about Iftakhar Ahmmed Shovon, a professional MERN Stack Web Developer from Bangladesh with 3+ years of experience. Specializing in React, Node.js, MongoDB, and clean code architecture. Available for freelance web development projects and full-time roles."
+          content="Learn about Iftakhar Ahmmed Shovon, a professional MERN Stack Web Developer from Bangladesh with 3+ years of experience. Specializing in React, Node.js, MongoDB, and clean code architecture. Available for freelance and full-time roles."
         />
         <link rel="canonical" href="https://iashovon.netlify.app/about" />
         <meta
           property="og:title"
-          content="About Iftakhar Ahmmed Shovon | MERN Stack Developer Bangladesh"
+          content="About IAShovon — Full-Stack Web Developer from Bangladesh"
         />
         <meta
           property="og:description"
-          content="Full-Stack Web Developer from Bangladesh with expertise in React, Node.js, and MongoDB. I turn complex business requirements into fast, scalable, and visually compelling web applications."
+          content="Iftakhar Ahmmed Shovon — Full-Stack Web Developer from Bangladesh with expertise in React, Node.js, and MongoDB. Turning complex requirements into fast, scalable web applications."
         />
         <meta property="og:url" content="https://iashovon.netlify.app/about" />
         <script type="application/ld+json">

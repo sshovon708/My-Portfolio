@@ -18,19 +18,19 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Iftakhar Ahmmed Shovon | Full-Stack Web Developer in Bangladesh — React, Node.js, MongoDB</title>
+        <title>IAShovon | Full-Stack Web Developer — React, Node.js & MongoDB</title>
         <meta
           name="description"
-          content="Iftakhar Ahmmed Shovon is a professional Full-Stack Web Developer from Bangladesh specializing in React, Node.js, and MongoDB. Explore my portfolio of 20+ projects, read expert blog posts on MERN stack development, and hire a reliable freelance web developer."
+          content="Iftakhar Ahmmed Shovon is a professional Full-Stack Web Developer from Bangladesh specializing in React, Node.js, and MongoDB. Explore 20+ projects, read expert MERN stack articles, and hire a reliable freelance developer."
         />
         <link rel="canonical" href="https://iashovon.netlify.app/" />
         <meta
           property="og:title"
-          content="Iftakhar Ahmmed Shovon | Full-Stack Web Developer in Bangladesh — Portfolio"
+          content="IAShovon | Full-Stack Web Developer — React, Node.js Portfolio"
         />
         <meta
           property="og:description"
-          content="Full-Stack Web Developer from Bangladesh specializing in React, Node.js & MongoDB. Browse 20+ web development projects, read expert articles, and get in touch for freelance or full-time opportunities."
+          content="Iftakhar Ahmmed Shovon — Full-Stack Web Developer from Bangladesh. Browse 20+ web development projects, read expert articles, and get in touch for freelance opportunities."
         />
         <meta property="og:url" content="https://iashovon.netlify.app/" />
       </Helmet>

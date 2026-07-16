@@ -44,19 +44,19 @@ export default function Projects() {
   return (
     <>
       <Helmet>
-        <title>My Projects | IAShovon</title>
+        <title>Projects | IAShovon — Full-Stack Web Developer Portfolio</title>
         <meta
           name="description"
-          content="Explore 22+ web development projects by Iftakhar Shovon - React apps, Node.js APIs, MERN stack applications, and full-stack solutions with clean code architecture."
+          content="Explore 22+ web development projects by Iftakhar Ahmmed Shovon — React apps, Node.js APIs, MERN stack applications, and full-stack solutions with clean code architecture."
         />
         <link rel="canonical" href="https://iashovon.netlify.app/projects" />
         <meta
           property="og:title"
-          content="Web Development Projects Portfolio | Iftakhar Shovon"
+          content="Projects Portfolio | IAShovon — Full-Stack Web Developer"
         />
         <meta
           property="og:description"
-          content="Browse 22+ full-stack and frontend projects equipped with clean code architecture. Real-world applications built with React, Node.js, MongoDB."
+          content="Browse 22+ full-stack and frontend projects by Iftakhar Ahmmed Shovon. Real-world applications built with React, Node.js, MongoDB, and clean architecture."
         />
         <meta
           property="og:url"
@@ -66,11 +66,11 @@ export default function Projects() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Web Development Projects | Iftakhar Shovon"
+          content="Projects Portfolio | IAShovon — Full-Stack Web Developer"
         />
         <meta
           name="twitter:description"
-          content="Explore my portfolio of 22+ React, Node.js, and full-stack projects."
+          content="Explore 22+ React, Node.js, and full-stack projects by Iftakhar Ahmmed Shovon."
         />
 
         {/* ItemList Schema */}
