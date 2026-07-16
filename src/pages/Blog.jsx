@@ -53,7 +53,7 @@ export default function Blog() {
               "@type": "BlogPosting",
               "headline": post.title,
               "description": post.excerpt,
-              "url": `https://iashovon.netlify.app/blog/${post.id}`,
+              "url": `https://iashovon.netlify.app/blog/${post.slug}`,
               "datePublished": post.date,
               "author": {
                 "@type": "Person",
@@ -129,7 +129,7 @@ export default function Blog() {
                   </div>
 
                   <Link
-                    to={`/blog/${post.id}`}
+                    to={`/blog/${post.slug}`}
                     className="ml-auto inline-flex items-center gap-1 text-xs font-bold text-blue-600 cursor-pointer"
                   >
                     Read Article <FaArrowRight className="text-[10px]" />

@@ -266,6 +266,7 @@ export const allBlogPosts = [
   {
     id: 1,
     title: "Why I Switched to Tailwind CSS v4 in 2026",
+    slug: "why-i-switched-to-tailwind-css-v4-in-2026",
     excerpt:
       "Tailwind CSS v4 introduces a Rust-powered compiler, zero-config setup, and native CSS variables that have completely transformed how I build interfaces.",
     content: `Tailwind CSS has always been a go-to tool for frontend developers, but the release of v4 in 2026 pushed things to an entirely new level. Here's why I migrated every recent project to it immediately.
@@ -383,6 +384,7 @@ Always use clinic.js or the Node.js built-in profiler to identify real bottlenec
   {
     id: 6,
     title: "PostgreSQL vs MongoDB: Choosing the Right Database in 2026",
+    slug: "postgresql-vs-mongodb-choosing-the-right-database-in-2026",
     excerpt:
       "The SQL vs NoSQL debate never ends, but the answer is simpler than it sounds. Here's the mental framework I use on every new project.",
     content: `Choosing a database is one of the most consequential architectural decisions you'll make. Here's how I think about it.
@@ -409,6 +411,7 @@ Either way, pick one, learn it deeply, and move on to building your product.`,
   {
     id: 7,
     title: "CSS Grid vs Flexbox: When to Use Which in 2026",
+    slug: "css-grid-vs-flexbox-when-to-use-which-in-2026",
     excerpt:
       "Stop guessing — here's a clear mental model for choosing between CSS Grid and Flexbox that I apply to every layout decision.",
     content: `The single most practical rule: use Flexbox for one-dimensional layouts and Grid for two-dimensional layouts.
@@ -438,6 +441,7 @@ Mastering both — and knowing instinctively which to reach for — is a visible
   {
     id: 8,
     title: "How I Structure Every React Project I Build",
+    slug: "how-i-structure-every-react-project-i-build",
     excerpt:
       "After shipping 20+ React apps, I've converged on a folder structure that scales well, stays readable, and makes onboarding new team members painless.",
     content: `A good folder structure is invisible when it works and painful when it doesn't. Here's the layout I use for every React + Vite project.
@@ -468,6 +472,7 @@ This structure works from a weekend project to a year-long team codebase.`,
   {
     id: 9,
     title: "Git Workflow for Solo Developers and Small Teams",
+    slug: "git-workflow-for-solo-developers-and-small-teams",
     excerpt:
       "Git can feel like overhead when you're working alone. Here's a lightweight branching strategy that keeps your history clean without slowing you down.",
     content: `You don't need GitFlow for a three-person startup. Here's the lean workflow I recommend.
@@ -497,6 +502,7 @@ git tag v1.2.0 on main before every deployment. When something breaks in product
   {
     id: 10,
     title: "Building a REST API with Express in Under an Hour",
+    slug: "building-a-rest-api-with-express-in-under-an-hour",
     excerpt:
       "A step-by-step walkthrough of scaffolding a production-ready Express REST API with authentication, validation, error handling, and MongoDB integration.",
     content: `This is the exact process I follow to spin up a new backend project.
@@ -536,6 +542,7 @@ That's a working, secure API in under 60 minutes.`,
   {
     id: 11,
     title: "TypeScript in React: The Patterns I Actually Use",
+    slug: "typescript-in-react-the-patterns-i-actually-use",
     excerpt:
       "TypeScript can feel like bureaucracy until you hit your first runtime error that types would have caught. Here are the patterns that pay off immediately.",
     content: `TypeScript's ROI is highest at component boundaries and API interfaces. Here are the patterns I find most valuable day-to-day.
@@ -571,6 +578,7 @@ Enable "strict": true in tsconfig.json before writing a single line. Retrofittin
   {
     id: 12,
     title: "Deploying a Full-Stack App: My End-to-End Process",
+    slug: "deploying-a-full-stack-app-my-end-to-end-process",
     excerpt:
       "From a running localhost dev server to a live HTTPS URL with CI/CD — here's the exact deployment pipeline I use for MERN stack applications.",
     content: `Getting a full-stack app to production is where many developers get stuck. Here's my step-by-step process.
@@ -602,6 +610,7 @@ Total time from working localhost to live HTTPS URL: about 45 minutes.`,
   {
     id: 13,
     title: "Accessibility in React: What Most Tutorials Skip",
+    slug: "accessibility-in-react-what-most-tutorials-skip",
     excerpt:
       "Building accessible web apps is not a checkbox exercise — it's a quality bar that improves usability for every user, not just those with disabilities.",
     content: `Accessibility (a11y) is frequently treated as a compliance task rather than a quality goal. Here's why that framing is wrong and what to do instead.
@@ -629,6 +638,7 @@ These are not extras — they're the minimum quality bar for a professional web 
   {
     id: 14,
     title: "How to Write Clean, Readable Code — Not Just Correct Code",
+    slug: "how-to-write-clean-readable-code-not-just-correct-code",
     excerpt:
       "Code is read far more often than it is written. These are the habits that will make your codebase a pleasure to work in six months from now.",
     content: `Writing code that runs correctly is the baseline. Writing code that a colleague (or future you) can read and modify confidently is the real skill.
@@ -654,6 +664,7 @@ Use Prettier. Automated formatting removes all debates about style and makes dif
   {
     id: 15,
     title: "What I Learned From My First Client Project",
+    slug: "what-i-learned-from-my-first-client-project",
     excerpt:
       "Landing my first paid web development project was exciting. Delivering it taught me more about professional software development than any course had.",
     content: `My first paid project — a business website for a local retailer — looked simple on paper. It turned out to be one of the most educational experiences of my career.

@@ -4,10 +4,10 @@ import { FaRegCalendarAlt, FaRegClock, FaArrowLeft } from "react-icons/fa";
 import { allBlogPosts } from "../data/mockData";
 
 export default function BlogPost() {
-  const { id } = useParams();
+  const { slug } = useParams();
 
-  // URL এর ID দিয়ে সঠিক ব্লগ পোস্টটি খুঁজে বের করা
-  const post = allBlogPosts.find((b) => b.id === parseInt(id));
+  // URL এর slug দিয়ে সঠিক ব্লগ পোস্টটি খুঁজে বের করা
+  const post = allBlogPosts.find((b) => b.slug === slug);
 
   // যদি কোনো কারণে ব্লগ পোস্টটি খুঁজে না পাওয়া যায়
   if (!post) {
@@ -31,13 +31,13 @@ export default function BlogPost() {
         <meta name="description" content={post.excerpt} />
         <link
           rel="canonical"
-          href={`https://iashovon.netlify.app/blog/${post.id}`}
+          href={`https://iashovon.netlify.app/blog/${post.slug}`}
         />
         <meta property="og:title" content={`${post.title} | IAShovon Blog`} />
         <meta property="og:description" content={post.excerpt} />
         <meta
           property="og:url"
-          content={`https://iashovon.netlify.app/blog/${post.id}`}
+          content={`https://iashovon.netlify.app/blog/${post.slug}`}
         />
         <meta property="og:type" content="article" />
         <meta property="article:published_time" content={post.date} />
@@ -60,7 +60,7 @@ export default function BlogPost() {
             "headline": post.title,
             "description": post.excerpt,
             "articleBody": post.content,
-            "url": `https://iashovon.netlify.app/blog/${post.id}`,
+            "url": `https://iashovon.netlify.app/blog/${post.slug}`,
             "datePublished": post.date,
             "dateModified": post.date,
             "author": {
@@ -74,7 +74,7 @@ export default function BlogPost() {
             },
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": `https://iashovon.netlify.app/blog/${post.id}`
+              "@id": `https://iashovon.netlify.app/blog/${post.slug}`
             },
             "wordCount": post.content?.split(" ").length || 0
           })}

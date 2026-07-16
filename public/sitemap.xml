@@ -40,127 +40,127 @@
   </url>
   <!-- Blog Posts -->
   <url>
-    <loc>https://iashovon.netlify.app/blog/1</loc>
+    <loc>https://iashovon.netlify.app/blog/why-i-switched-to-tailwind-css-v4-in-2026</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://iashovon.netlify.app/blog/2</loc>
+    <loc>https://iashovon.netlify.app/blog/mastering-asynchronous-javascript-rest-apis</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://iashovon.netlify.app/blog/3</loc>
+    <loc>https://iashovon.netlify.app/blog/the-reality-of-building-full-stack-apps-solo</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://iashovon.netlify.app/blog/4</loc>
+    <loc>https://iashovon.netlify.app/blog/react-useeffect-the-complete-guide-for-2026</loc>
     <lastmod>2026-05-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://iashovon.netlify.app/blog/5</loc>
+    <loc>https://iashovon.netlify.app/blog/node-js-performance-5-optimizations-that-actually-matter</loc>
     <lastmod>2026-04-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://iashovon.netlify.app/blog/6</loc>
+    <loc>https://iashovon.netlify.app/blog/postgresql-vs-mongodb-choosing-the-right-database-in-2026</loc>
     <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://iashovon.netlify.app/blog/7</loc>
+    <loc>https://iashovon.netlify.app/blog/css-grid-vs-flexbox-when-to-use-which-in-2026</loc>
     <lastmod>2026-04-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://iashovon.netlify.app/blog/8</loc>
+    <loc>https://iashovon.netlify.app/blog/how-i-structure-every-react-project-i-build</loc>
     <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://iashovon.netlify.app/blog/9</loc>
+    <loc>https://iashovon.netlify.app/blog/git-workflow-for-solo-developers-and-small-teams</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://iashovon.netlify.app/blog/10</loc>
+    <loc>https://iashovon.netlify.app/blog/building-a-rest-api-with-express-in-under-an-hour</loc>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://iashovon.netlify.app/blog/11</loc>
+    <loc>https://iashovon.netlify.app/blog/typescript-in-react-the-patterns-i-actually-use</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://iashovon.netlify.app/blog/12</loc>
+    <loc>https://iashovon.netlify.app/blog/deploying-a-full-stack-app-my-end-to-end-process</loc>
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://iashovon.netlify.app/blog/13</loc>
+    <loc>https://iashovon.netlify.app/blog/accessibility-in-react-what-most-tutorials-skip</loc>
     <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://iashovon.netlify.app/blog/14</loc>
+    <loc>https://iashovon.netlify.app/blog/how-to-write-clean-readable-code-not-just-correct-code</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://iashovon.netlify.app/blog/15</loc>
+    <loc>https://iashovon.netlify.app/blog/what-i-learned-from-my-first-client-project</loc>
     <lastmod>2026-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://iashovon.netlify.app/blog/16</loc>
+    <loc>https://iashovon.netlify.app/blog/the-best-developer-tools-i-use-daily-in-2026</loc>
     <lastmod>2026-02-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://iashovon.netlify.app/blog/17</loc>
+    <loc>https://iashovon.netlify.app/blog/understanding-the-javascript-event-loop-once-and-for-all</loc>
     <lastmod>2026-02-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://iashovon.netlify.app/blog/18</loc>
+    <loc>https://iashovon.netlify.app/blog/how-to-build-a-responsive-ui-without-media-query-hell</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://iashovon.netlify.app/blog/19</loc>
+    <loc>https://iashovon.netlify.app/blog/zustand-the-state-manager-that-finally-makes-sense</loc>
     <lastmod>2026-01-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://iashovon.netlify.app/blog/20</loc>
+    <loc>https://iashovon.netlify.app/blog/from-idea-to-mvp-how-i-scope-a-new-project</loc>
     <lastmod>2026-01-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://iashovon.netlify.app/blog/21</loc>
+    <loc>https://iashovon.netlify.app/blog/securing-your-node-js-api-a-practical-checklist</loc>
     <lastmod>2026-01-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
