@@ -19,7 +19,7 @@ export default defineConfig([
     },
   },
   {
-    files: ['prerender.js'],
+    files: ['prerender.js', 'scripts/**/*.js'],
     languageOptions: {
       globals: globals.node,
     },

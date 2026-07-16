@@ -1,65 +1,195 @@
-import fs from "fs";
+#!/usr/bin/env node
+/**
+ * Production-quality SEO Audit Tool for React + Vite projects
+ *
+ * Usage:
+ *   node scripts/audit-seo.js                # Standard audit
+ *   node scripts/audit-seo.js --verbose       # Verbose mode (show passes too)
+ *   node scripts/audit-seo.js --json          # JSON output
+ *   node scripts/audit-seo.js --fix           # Auto-fix safe issues (experimental)
+ */
+import { resolve } from "node:path";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { scanDirectory, readFileContent, classifyFile } from "./seo-modules/scanner.js";
+import { extractMetadata } from "./seo-modules/parser.js";
+import { auditFile, resetFindings, getFindings, setVerbose } from "./seo-modules/auditor.js";
+import { calculateScores } from "./seo-modules/scorer.js";
+import { generateReport, hasCriticalIssues } from "./seo-modules/reporter.js";
+import { BRAND } from "./seo-modules/config.js";
 
-const files = {
-  "index.html": fs.readFileSync("index.html", "utf8"),
-  "Home.jsx (src/pages)": fs.readFileSync("src/pages/Home.jsx", "utf8"),
-  "About.jsx (src/pages)": fs.readFileSync("src/pages/About.jsx", "utf8"),
-  "Projects.jsx (src/pages)": fs.readFileSync("src/pages/Projects.jsx", "utf8"),
-  "Blog.jsx (src/pages)": fs.readFileSync("src/pages/Blog.jsx", "utf8"),
-  "Contact.jsx (src/pages)": fs.readFileSync("src/pages/Contact.jsx", "utf8"),
-  "ThankYou.jsx (src/pages)": fs.readFileSync("src/pages/ThankYou.jsx", "utf8"),
-  "BlogPost.jsx (src/pages)": fs.readFileSync("src/pages/BlogPost.jsx", "utf8"),
+// Parse CLI arguments
+const args = process.argv.slice(2);
+const options = {
+  verbose: args.includes("--verbose") || args.includes("-v"),
+  json: args.includes("--json") || args.includes("-j"),
+  fix: args.includes("--fix") || args.includes("-f"),
 };
 
-console.log("=== TITLE & DESCRIPTION AUDIT ===\n");
+if (options.verbose) {
+  setVerbose(true);
+}
 
-let allPass = true;
+async function main() {
+  const projectRoot = process.cwd();
+  console.error(`🔍 Scanning project: ${projectRoot}\n`);
 
-Object.entries(files).forEach(([file, content]) => {
-  const titleMatch = content.match(/<title>([^<]+)<\/title>/);
-  const descMatch = content.match(/name="description"[^>]*content="([^"]+)"/);
-  const ogTitleMatch = content.match(/property="og:title"[^>]*content="([^"]+)"/);
+  // Step 1: Recursively scan for all relevant files
+  const files = await scanDirectory(projectRoot);
 
-  console.log("---", file, "---");
+  if (files.length === 0) {
+    console.error("❌ No relevant files found. Are you in a React + Vite project?");
+    process.exit(1);
+  }
 
-  if (titleMatch) {
-    const title = titleMatch[1];
-    const isDynamic = title.includes("${");
+  console.error(`📄 Found ${files.length} relevant files to audit\n`);
 
-    if (!isDynamic) {
-      const lenOk = title.length >= 40 && title.length <= 65;
-      const hasBrand = title.includes("IAShovon");
-      const hasFullName = title.includes("Iftakhar Ahmmed Shovon");
-      console.log("  Title:", title);
-      console.log("  Length:", title.length, "chars", lenOk ? "✅" : "⚠️ (40-65 recommended)");
-      console.log("  Brand 'IAShovon':", hasBrand ? "✅" : "❌ MISSING");
-      console.log("  Full name in title:", hasFullName ? "❌ VIOLATION" : "✅ OK");
+  // Step 2: Check infrastructure files (robots.txt, sitemap.xml)
+  const infraChecks = checkInfrastructure(projectRoot);
 
-      if (!hasBrand || hasFullName || !lenOk) allPass = false;
-    } else {
-      console.log("  Title: [DYNAMIC TEMPLATE]", title);
-      console.log("  Brand 'IAShovon':", title.includes("IAShovon") ? "✅" : "❌ MISSING");
-      if (!title.includes("IAShovon")) allPass = false;
+  // Step 3: Extract metadata from each file
+  const allMeta = [];
+  const fileResults = [];
+
+  for (const file of files) {
+    const content = readFileContent(file);
+    if (!content) continue;
+
+    const relativePath = file.replace(projectRoot + "/", "").replace(/\\/g, "/");
+    const meta = extractMetadata(content);
+    const fileType = classifyFile(file);
+
+    allMeta.push({ path: relativePath, meta, fileType, content });
+    fileResults.push({ path: relativePath, meta, fileType });
+  }
+
+  // Step 4: Audit each file
+  resetFindings();
+
+  // First pass: collect all metadata for duplicate detection
+  for (const result of fileResults) {
+    auditFile(result.path, result.path, result.meta, allMeta);
+  }
+
+  // Step 5: Add infrastructure findings
+  const allFindings = [...getFindings(), ...infraChecks];
+
+  // Step 6: Calculate scores
+  const scores = calculateScores(allFindings);
+
+  // Step 7: Generate report
+  const report = generateReport(allFindings, scores, options);
+
+  if (options.json) {
+    console.log(report);
+  } else {
+    console.log(report);
+  }
+
+  // Step 8: Auto-fix (experimental)
+  if (options.fix) {
+    const fixed = autoFix(allFindings);
+    if (fixed > 0) {
+      console.log(`\n🔧 Auto-fixed ${fixed} issue(s). Review changes before committing.`);
     }
   }
 
-  if (descMatch) {
-    const desc = descMatch[1];
-    const lenOk = desc.length <= 160;
-    console.log("  Description length:", desc.length, "chars", lenOk ? "✅" : "❌ OVER 160");
-    if (!lenOk) allPass = false;
+  // Step 9: Exit with appropriate code
+  if (hasCriticalIssues(allFindings)) {
+    process.exit(1);
   }
+  process.exit(0);
+}
 
-  if (ogTitleMatch) {
-    const ogt = ogTitleMatch[1];
-    const isDynamic = ogt.includes("${");
-    if (!isDynamic) {
-      const hasBrand = ogt.includes("IAShovon");
-      console.log("  OG Title brand:", hasBrand ? "✅" : "❌ MISSING");
-      if (!hasBrand) allPass = false;
+/**
+ * Check infrastructure SEO files
+ */
+function checkInfrastructure(projectRoot) {
+  const findings = [];
+  const checks = [
+    { file: "public/robots.txt", label: "robots.txt", critical: false },
+    { file: "public/sitemap.xml", label: "sitemap.xml", critical: false },
+    { file: "public/_redirects", label: "_redirects (Netlify)", critical: false },
+    { file: "public/manifest.json", label: "Web manifest (manifest.json)", critical: false },
+  ];
+
+  for (const check of checks) {
+    const fullPath = resolve(projectRoot, check.file);
+    if (!existsSync(fullPath)) {
+      findings.push({
+        filePath: check.file,
+        issue: `Missing ${check.label}`,
+        severity: check.critical ? "Critical" : "High",
+        why: `${check.label} is required for proper SEO and site configuration`,
+        fix: `Create ${check.file} with appropriate content`,
+      });
+    } else if (check.label === "robots.txt") {
+      const content = readFileSync(fullPath, "utf-8");
+      if (!content.includes("Sitemap:")) {
+        findings.push({
+          filePath: check.file,
+          issue: "robots.txt missing Sitemap reference",
+          severity: "Medium",
+          why: "Sitemap reference helps search engines discover all pages",
+          fix: `Add 'Sitemap: ${BRAND.siteUrl}/sitemap.xml' to robots.txt`,
+        });
+      }
+    } else if (check.label === "sitemap.xml") {
+      const content = readFileSync(fullPath, "utf-8");
+      if (!content.includes("<urlset")) {
+        findings.push({
+          filePath: check.file,
+          issue: "sitemap.xml appears malformed",
+          severity: "High",
+          why: "Search engines use sitemap.xml to discover pages",
+          fix: "Ensure sitemap.xml has valid <urlset> with <url> entries",
+        });
+      }
     }
   }
-  console.log("");
+
+  return findings;
+}
+
+/**
+ * Auto-fix some safe issues (experimental)
+ */
+function autoFix(findings) {
+  let fixed = 0;
+
+  for (const finding of findings) {
+    // Only auto-fix Medium/Low issues with clear fixes
+    if (finding.severity === "Critical" || finding.severity === "High") continue;
+
+    // Find the file content
+    const filePath = resolve(process.cwd(), finding.filePath);
+    if (!existsSync(filePath)) continue;
+
+    let content = readFileSync(filePath, "utf-8");
+
+    // Fix: add loading="lazy" to images
+    if (finding.issue.includes('loading="lazy"')) {
+      const imgSrc = finding.issue.match(/:\s*(\S+)$/);
+      if (imgSrc) {
+        const newContent = content.replace(
+          new RegExp(`(<img[^>]*src=["']${escapeRegex(imgSrc[1])}["'][^>]*)>`),
+          '$1 loading="lazy">'
+        );
+        if (newContent !== content) {
+          writeFileSync(filePath, newContent);
+          fixed++;
+        }
+      }
+    }
+  }
+
+  return fixed;
+}
+
+function escapeRegex(str) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+main().catch((err) => {
+  console.error("❌ Audit failed:", err.message);
+  process.exit(1);
 });
-
-console.log("=== OVERALL:", allPass ? "ALL CHECKS PASSED ✅" : "SOME CHECKS FAILED ❌", "===");

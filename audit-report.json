@@ -1,0 +1,107 @@
+🔍 Scanning project: c:\Users\ADMIN\OneDrive\IA _SHOVON\My Portfolio
+
+📄 Found 24 relevant files to audit
+
+{
+  "findings": [
+    {
+      "filePath": "c:/Users/ADMIN/OneDrive/IA _SHOVON/My Portfolio/index.html",
+      "issue": "Description too long (242 chars, max 160)",
+      "severity": "High",
+      "why": "Long descriptions get truncated in SERPs",
+      "fix": "Shorten description to 160 characters or less"
+    },
+    {
+      "filePath": "c:/Users/ADMIN/OneDrive/IA _SHOVON/My Portfolio/index.html",
+      "issue": "Missing H1 tag",
+      "severity": "High",
+      "why": "H1 is critical for page structure and SEO",
+      "fix": "Add exactly one H1 tag describing the page content"
+    },
+    {
+      "filePath": "c:/Users/ADMIN/OneDrive/IA _SHOVON/My Portfolio/scripts/seo-modules/auditor.js",
+      "issue": "Author meta \"...\" doesn't match brand name",
+      "severity": "Medium",
+      "why": "Author should match the site owner's full name",
+      "fix": "Set author to \"Iftakhar Ahmmed Shovon\""
+    },
+    {
+      "filePath": "c:/Users/ADMIN/OneDrive/IA _SHOVON/My Portfolio/src/components/Footer.jsx",
+      "issue": "External link missing rel=\"noopener\": https://wa.me/8801315585665",
+      "severity": "Medium",
+      "why": "Missing noopener is a security risk",
+      "fix": "Add rel=\"noopener noreferrer\" to external links"
+    },
+    {
+      "filePath": "c:/Users/ADMIN/OneDrive/IA _SHOVON/My Portfolio/src/pages/About.jsx",
+      "issue": "Description too long (235 chars, max 160)",
+      "severity": "High",
+      "why": "Long descriptions get truncated in SERPs",
+      "fix": "Shorten description to 160 characters or less"
+    },
+    {
+      "filePath": "c:/Users/ADMIN/OneDrive/IA _SHOVON/My Portfolio/src/pages/Blog.jsx",
+      "issue": "Description too long (162 chars, max 160)",
+      "severity": "High",
+      "why": "Long descriptions get truncated in SERPs",
+      "fix": "Shorten description to 160 characters or less"
+    },
+    {
+      "filePath": "c:/Users/ADMIN/OneDrive/IA _SHOVON/My Portfolio/src/pages/Contact.jsx",
+      "issue": "Description too long (199 chars, max 160)",
+      "severity": "High",
+      "why": "Long descriptions get truncated in SERPs",
+      "fix": "Shorten description to 160 characters or less"
+    },
+    {
+      "filePath": "c:/Users/ADMIN/OneDrive/IA _SHOVON/My Portfolio/src/pages/Contact.jsx",
+      "issue": "External link missing rel=\"noopener\": https://wa.me/8801315585665",
+      "severity": "Medium",
+      "why": "Missing noopener is a security risk",
+      "fix": "Add rel=\"noopener noreferrer\" to external links"
+    },
+    {
+      "filePath": "c:/Users/ADMIN/OneDrive/IA _SHOVON/My Portfolio/src/pages/Home.jsx",
+      "issue": "Description too long (222 chars, max 160)",
+      "severity": "High",
+      "why": "Long descriptions get truncated in SERPs",
+      "fix": "Shorten description to 160 characters or less"
+    },
+    {
+      "filePath": "c:/Users/ADMIN/OneDrive/IA _SHOVON/My Portfolio/src/pages/NotFound.jsx",
+      "issue": "Robots meta is \"noindex\"",
+      "severity": "High",
+      "why": "Page won't be indexed by search engines",
+      "fix": "Remove \"noindex\" or change to \"index, follow\""
+    },
+    {
+      "filePath": "c:/Users/ADMIN/OneDrive/IA _SHOVON/My Portfolio/src/pages/Projects.jsx",
+      "issue": "Description too long (170 chars, max 160)",
+      "severity": "High",
+      "why": "Long descriptions get truncated in SERPs",
+      "fix": "Shorten description to 160 characters or less"
+    },
+    {
+      "filePath": "c:/Users/ADMIN/OneDrive/IA _SHOVON/My Portfolio/src/pages/ThankYou.jsx",
+      "issue": "Robots meta is \"noindex\"",
+      "severity": "High",
+      "why": "Page won't be indexed by search engines",
+      "fix": "Remove \"noindex\" or change to \"index, follow\""
+    }
+  ],
+  "scores": {
+    "overall": 46,
+    "technical": 90,
+    "onpage": 89,
+    "metadata": 70,
+    "accessibility": 100,
+    "brand": 97,
+    "deductions": {
+      "critical": 0,
+      "high": 9,
+      "medium": 3,
+      "low": 0
+    }
+  },
+  "timestamp": "2026-07-16T03:47:08.176Z"
+}
