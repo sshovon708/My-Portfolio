@@ -9,7 +9,7 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import BlogPost from "./pages/BlogPost";
 import NotFound from "./pages/NotFound";
-import ThankYou from "./pages/Thankyou";
+import ThankYou from "./pages/ThankYou";
 
 function App() {
   return (
